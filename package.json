@@ -4,7 +4,12 @@
   "license": "MIT",
   "version": "0.1.0",
   "private": "true",
+  "bin": {
+    "micro-dev": "./bin/micro-dev.js"
+  },
   "dependencies": {
-    "micro": "zeit/micro#8.0.0"
+    "chalk": "2.0.1",
+    "micro": "zeit/micro#8.0.0",
+    "mri": "1.1.0"
   }
 }
