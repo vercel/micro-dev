@@ -1,0 +1,10 @@
+{
+  "name": "micro-dev",
+  "repository": "zeit/micro-dev",
+  "license": "MIT",
+  "version": "0.1.0",
+  "private": "true",
+  "dependencies": {
+    "micro": "zeit/micro#8.0.0"
+  }
+}
