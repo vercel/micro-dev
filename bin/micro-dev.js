@@ -8,33 +8,35 @@ const path = require('path')
 const mri = require('mri')
 
 // Utilities
-const showHelp = require('../lib/help')
-const {version} = require('../package')
+const generateHelp = require('../lib/help')
+const { version } = require('../package')
 const serve = require('../lib/serve')
 
 const flags = mri(process.argv.slice(2), {
-  boolean: [
-    'help',
-    'version'
-  ],
+  boolean: ['help', 'version'],
   alias: {
     h: 'help',
     v: 'version'
   },
-  unknown: showHelp
+  unknown(flag) {
+    console.log(`The option "${flag}" is unknown. Use one of these:`)
+    console.log(generateHelp())
+    process.exit()
+  }
 })
+
+// When `-h` or `--help` are used, print out
+// the usage information
+if (flags.help) {
+  console.log(generateHelp())
+  process.exit()
+}
 
 // Print out the package's version when
 // `--version` or `-v` are used
 if (flags.version) {
   console.log(version)
-  process.exit(1)
-}
-
-// When `-h` or `--help` are used, print out
-// the usage information
-if (flags.help) {
-  showHelp()
+  process.exit()
 }
 
 let file = flags._[0]
