@@ -13,12 +13,13 @@ const { version } = require('../package')
 const serve = require('../lib/serve')
 
 const flags = mri(process.argv.slice(2), {
+  string: ['host', 'port'],
   boolean: ['help', 'version'],
-  string: ['port'],
   alias: {
+    p: 'port',
+    H: 'host',
     h: 'help',
-    v: 'version',
-    p: 'port'
+    v: 'version'
   },
   unknown(flag) {
     console.log(`The option "${flag}" is unknown. Use one of these:`)
