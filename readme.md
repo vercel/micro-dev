@@ -5,10 +5,13 @@ This command line interface provides a belt full of tools that make building mic
 Things this package handles for you:
 
 - Hot code reloading
-- Beautiful logs for incoming requests
+- Logs for incoming and outgoing requests
+- JSON bodies are logged in a beautiful way
 - The local address is pasted to the clipboard automatically
 - Automatic detection and use of an open port
 - Network address shown in addition to local one
+- Calculates and shows request duration
+- Prettifies the `Error` object if any exceptions are thrown
 
 ## Usage
 
