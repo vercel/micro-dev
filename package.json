@@ -8,7 +8,11 @@
     "micro-dev": "./bin/micro-dev.js"
   },
   "dependencies": {
+    "boxen": "1.2.0",
     "chalk": "2.0.1",
+    "clipboardy": "1.1.4",
+    "detect-port": "1.2.1",
+    "ip": "1.1.5",
     "micro": "zeit/micro#8.0.0",
     "mri": "1.1.0"
   }
