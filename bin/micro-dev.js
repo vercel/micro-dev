@@ -9,8 +9,8 @@ const mri = require('mri')
 
 // Utilities
 const generateHelp = require('../lib/help')
-const { version } = require('../package')
 const serve = require('../lib/serve')
+const { version } = require('../package')
 
 const flags = mri(process.argv.slice(2), {
   string: ['host', 'port'],
