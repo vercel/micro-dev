@@ -14,9 +14,11 @@ const serve = require('../lib/serve')
 
 const flags = mri(process.argv.slice(2), {
   boolean: ['help', 'version'],
+  string: ['port'],
   alias: {
     h: 'help',
-    v: 'version'
+    v: 'version',
+    p: 'port'
   },
   unknown(flag) {
     console.log(`The option "${flag}" is unknown. Use one of these:`)
