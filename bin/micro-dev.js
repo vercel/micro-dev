@@ -11,6 +11,7 @@ const mri = require('mri')
 const generateHelp = require('../lib/help')
 const serve = require('../lib/serve')
 const { version } = require('../package')
+const showError = require('../lib/error')
 
 const flags = mri(process.argv.slice(2), {
   string: ['host', 'port'],
@@ -51,14 +52,17 @@ if (!file) {
     file = packageJson.main || 'index.js'
   } catch (err) {
     if (err.code !== 'MODULE_NOT_FOUND') {
-      console.error(`Could not read \`package.json\`: ${err.message}`)
+      showError(
+        `Could not read \`package.json\`: ${err.message}`,
+        'invalid-package-json'
+      )
       process.exit(1)
     }
   }
 }
 
 if (!file) {
-  console.error('Please supply a file!')
+  showError('Please supply a file!', 'path-missing')
   process.exit(1)
 }
 
@@ -67,7 +71,10 @@ if (file[0] !== '/') {
 }
 
 if (!existsSync(file)) {
-  console.log(`The file or directory "${path.basename(file)}" doesn't exist!`)
+  showError(
+    `The file or directory "${path.basename(file)}" doesn't exist!`,
+    'path-not-existent'
+  )
   process.exit(1)
 }
 
