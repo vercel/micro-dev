@@ -1,12 +1,40 @@
 {
   "name": "micro-dev",
-  "repository": "zeit/micro-dev",
-  "license": "MIT",
   "version": "0.1.0",
   "private": "true",
+  "scripts": {
+    "precommit": "lint-staged",
+    "test": "xo"
+  },
   "bin": {
     "micro-dev": "./bin/micro-dev.js"
   },
+  "repository": "zeit/micro-dev",
+  "license": "MIT",
+  "xo": {
+    "ignores": [
+      "examples/**/*"
+    ],
+    "extends": "prettier",
+    "rules": {
+      "unicorn/no-process-exit": 0
+    }
+  },
+  "lint-staged": {
+    "*.js": [
+      "npm run test",
+      "prettier --single-quote --no-semi --write",
+      "git add"
+    ]
+  },
+  "keywords": [
+    "micro",
+    "development",
+    "service",
+    "microservice",
+    "serverless",
+    "API"
+  ],
   "dependencies": {
     "boxen": "1.2.0",
     "chalk": "2.0.1",
@@ -15,5 +43,12 @@
     "ip": "1.1.5",
     "micro": "zeit/micro#8.0.0",
     "mri": "1.1.0"
+  },
+  "devDependencies": {
+    "eslint-config-prettier": "2.3.0",
+    "husky": "0.14.3",
+    "lint-staged": "4.0.2",
+    "prettier": "1.5.3",
+    "xo": "0.18.2"
   }
 }
