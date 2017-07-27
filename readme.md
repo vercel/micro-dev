@@ -1,8 +1,11 @@
 # micro-dev
 
+[![Slack Channel](http://zeit-slackin.now.sh/badge.svg)](https://zeit.chat/)
+[![XO code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg)](https://github.com/sindresorhus/xo)
+
 This command line interface provides a belt full of tools that make building microservices using [micro](https://github.com/zeit/micro) a breeze! It's only meant to be used in development, **not in production** (that's where [micro](https://github.com/zeit/micro) comes in).
 
-Things this package handles for you:
+## Features
 
 - **Hot Reloading:** When making changes to your code, the server will restart by itself
 - **Logs:** Incoming and outgoing requests will be logged to `stdout`
