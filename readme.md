@@ -2,6 +2,14 @@
 
 This command line interface provides a belt full of tools that make building microservices using [micro](https://github.com/zeit/micro) a breeze! It's only meant to be used in development, **not in production** (that's where [micro](https://github.com/zeit/micro) comes in).
 
+Things this package handles for you:
+
+- Hot code reloading
+- Beautiful logs for incoming requests
+- The local address is pasted to the clipboard automatically
+- Automatic detection and use of an open port
+- Network address shown in addition to local one
+
 ## Usage
 
 Firstly, add the package to your project's `devDependencies`:
