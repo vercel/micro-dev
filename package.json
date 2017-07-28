@@ -48,6 +48,7 @@
     "jsome": "2.3.26",
     "micro": "zeit/micro#8.0.0",
     "mri": "1.1.0",
+    "pkg-up": "2.0.0",
     "pretty-error": "2.1.1",
     "string-length": "2.0.0"
   },
