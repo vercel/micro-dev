@@ -24,10 +24,11 @@ Firstly, add the package to your project's `devDependencies`:
 npm install -D micro-dev
 ```
 
-Now add a new sub property to `scripts` inside `package.json`:
+Now add a new `script` property below `micro` inside `package.json`:
 
 ```json
 "scripts": {
+  "start": "micro",
   "dev": "micro-dev"
 }
 ```
@@ -37,6 +38,8 @@ As the final step, start the development server:
 ```bash
 npm run dev
 ```
+
+The production environment should be handled like [this](https://github.com/zeit/micro#usage).
 
 ## Caught a Bug?
 
