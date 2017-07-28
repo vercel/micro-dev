@@ -15,10 +15,11 @@ const showError = require('../lib/error')
 
 const flags = mri(process.argv.slice(2), {
   string: ['host', 'port'],
-  boolean: ['help', 'version'],
+  boolean: ['help', 'version', 'graceful'],
   alias: {
     p: 'port',
     H: 'host',
+    g: 'graceful',
     h: 'help',
     v: 'version'
   },
