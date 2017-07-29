@@ -39,7 +39,7 @@
     "API"
   ],
   "dependencies": {
-    "boxen": "1.2.0",
+    "boxen": "1.2.1",
     "chalk": "2.0.1",
     "chokidar": "1.7.0",
     "clipboardy": "1.1.4",
