@@ -1,9 +1,9 @@
 <img src="https://raw.githubusercontent.com/zeit/art/b1c55af9827fc0293bc5a9c1a03e37e08a6f8f16/micro-dev/logo.png" width="80"/>
 
+This command line interface provides a belt full of tools that make building microservices using [micro](https://github.com/zeit/micro) a breeze! It's only meant to be used in development, **not in production** (that's where [micro](https://github.com/zeit/micro) comes in).
+
 [![Slack Channel](http://zeit-slackin.now.sh/badge.svg)](https://zeit.chat/)
 [![XO code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg)](https://github.com/sindresorhus/xo)
-
-This command line interface provides a belt full of tools that make building microservices using [micro](https://github.com/zeit/micro) a breeze! It's only meant to be used in development, **not in production** (that's where [micro](https://github.com/zeit/micro) comes in).
 
 ## Features
 
