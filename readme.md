@@ -18,13 +18,15 @@ This command line interface provides a belt full of tools that make building mic
 
 ## Usage
 
-Firstly, add the package to your project's `devDependencies`:
+**Important:** This tool is only meant to be used in development. In production, you should use [micro](https://github.com/zeit/micro), which is much lighter and faster (and also comes without the belt of tools used when developing microservices).
+
+When preparing your development environment, firstly install `micro-dev`:
 
 ```bash
-npm install -D micro-dev
+npm install --save-dev micro-dev
 ```
 
-Now add a new `script` property below `micro` inside `package.json`:
+Next, add a new `script` property below `micro` inside `package.json`:
 
 ```json
 "scripts": {
@@ -33,13 +35,11 @@ Now add a new `script` property below `micro` inside `package.json`:
 }
 ```
 
-As the final step, start the development server:
+As the final step, start the development server like this:
 
 ```bash
 npm run dev
 ```
-
-The production environment should be handled like [this](https://github.com/zeit/micro#usage).
 
 ## Caught a Bug?
 
