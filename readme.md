@@ -41,7 +41,7 @@ As the final step, start the development server like this:
 npm run dev
 ```
 
-## Caught a Bug?
+## Contributing
 
 1. [Fork](https://help.github.com/articles/fork-a-repo/) this repository to your own GitHub account and then [clone](https://help.github.com/articles/cloning-a-repository/) it to your local device
 2. Move into the directory of the clone: `cd micro-dev`
