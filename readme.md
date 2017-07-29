@@ -1,4 +1,4 @@
-# micro-dev
+<img src="https://raw.githubusercontent.com/zeit/art/b1c55af9827fc0293bc5a9c1a03e37e08a6f8f16/micro-dev/logo.png" width="80"/>
 
 [![Slack Channel](http://zeit-slackin.now.sh/badge.svg)](https://zeit.chat/)
 [![XO code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg)](https://github.com/sindresorhus/xo)
