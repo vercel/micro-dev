@@ -14,8 +14,10 @@ const { version } = require('../package')
 const logError = require('../lib/error')
 
 const flags = mri(process.argv.slice(2), {
-  string: ['host', 'port'],
-  boolean: ['help', 'version'],
+  default: {
+    host: '::',
+    port: 3000
+  },
   alias: {
     p: 'port',
     H: 'host',
