@@ -15,7 +15,7 @@ This command line interface provides a belt full of tools that make building mic
 - **Port Selection:** Automatic detection and use of an open port (if the specified one is in use)
 - **Debug in Your Network:** The network address shown in addition to local one
 - **Duraction Logs:** Calculates and shows the duration for each request
-- **Pretty Errors:** Prettifies the `Error` object if any exceptions are thrown
+- **Pretty Errors:** Prettifies the `Error` object if any exceptions is thrown
 
 ## Usage
 
