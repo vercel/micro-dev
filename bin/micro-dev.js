@@ -48,7 +48,7 @@ if (flags.version) {
   process.exit()
 }
 
-if (flags.nowatch && (flags.nowatch || flags.poll)) {
+if (flags.nowatch && (flags.watch || flags.poll)) {
   logError('The --nowatch flag is not compatible with --watch or --poll!')
   process.exit(1)
 }
