@@ -21,6 +21,9 @@ const flags = mri(process.argv.slice(2), {
   alias: {
     p: 'port',
     H: 'host',
+    n: 'nowatch',
+    w: 'watch',
+    L: 'poll',
     h: 'help',
     v: 'version'
   },
@@ -43,6 +46,11 @@ if (flags.help) {
 if (flags.version) {
   console.log(version)
   process.exit()
+}
+
+if (flags.nowatch && (flags.nowatch || flags.poll)) {
+  logError('The --nowatch flag is not compatible with --watch or --poll!')
+  process.exit(1)
 }
 
 let file = flags._[0]
