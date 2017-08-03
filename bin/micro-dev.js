@@ -21,7 +21,7 @@ const flags = mri(process.argv.slice(2), {
   alias: {
     p: 'port',
     H: 'host',
-    n: 'nowatch',
+    c: 'cold',
     w: 'watch',
     L: 'poll',
     h: 'help',
@@ -48,8 +48,11 @@ if (flags.version) {
   process.exit()
 }
 
-if (flags.nowatch && (flags.watch || flags.poll)) {
-  logError('The --nowatch flag is not compatible with --watch or --poll!')
+if (flags.cold && (flags.watch || flags.poll)) {
+  logError(
+    'The --cold flag is not compatible with --watch or --poll!',
+    'watch-flags'
+  )
   process.exit(1)
 }
 
