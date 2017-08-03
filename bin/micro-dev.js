@@ -21,6 +21,9 @@ const flags = mri(process.argv.slice(2), {
   alias: {
     p: 'port',
     H: 'host',
+    c: 'cold',
+    w: 'watch',
+    L: 'poll',
     h: 'help',
     v: 'version'
   },
@@ -43,6 +46,14 @@ if (flags.help) {
 if (flags.version) {
   console.log(version)
   process.exit()
+}
+
+if (flags.cold && (flags.watch || flags.poll)) {
+  logError(
+    'The --cold flag is not compatible with --watch or --poll!',
+    'watch-flags'
+  )
+  process.exit(1)
 }
 
 let file = flags._[0]
