@@ -75,7 +75,7 @@ if (!file) {
 }
 
 if (!file) {
-  logError('Please supply a file!', 'path-missing')
+  logError('No path defined!', 'path-missing')
   process.exit(1)
 }
 
