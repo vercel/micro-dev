@@ -25,7 +25,8 @@ const flags = mri(process.argv.slice(2), {
     w: 'watch',
     L: 'poll',
     h: 'help',
-    v: 'version'
+    v: 'version',
+    i: 'ignore'
   },
   unknown(flag) {
     console.log(`The option "${flag}" is unknown. Use one of these:`)
