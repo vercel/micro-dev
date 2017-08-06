@@ -39,7 +39,6 @@
     "API"
   ],
   "dependencies": {
-    "anymatch": "1.3.2",
     "boxen": "1.2.1",
     "chalk": "2.0.1",
     "chokidar": "1.7.0",
