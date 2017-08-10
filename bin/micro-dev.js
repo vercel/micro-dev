@@ -24,6 +24,7 @@ const flags = mri(process.argv.slice(2), {
     c: 'cold',
     w: 'watch',
     L: 'poll',
+    s: 'silent',
     h: 'help',
     v: 'version',
     i: 'ignore'
