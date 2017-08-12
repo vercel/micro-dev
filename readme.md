@@ -48,7 +48,7 @@ npm run dev
 2. Move into the directory of the clone: `cd micro-dev`
 3. Link it to the global module directory of Node.js: `npm link`
 
-Inside the project where you want to test your clone of the package, you can now either use `npm link micro-dev` to link the clone to the local dependencies or run `micro-dev` right in your terminal.
+Inside the project where you want to test your clone of the package, you can now either use `npm link micro-dev` to link the cloned source to your project's local dependencies or run `micro-dev` right in your terminal.
 
 ## Authors
 
