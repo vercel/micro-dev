@@ -45,6 +45,8 @@
     "clipboardy": "1.1.4",
     "debounce": "1.0.2",
     "get-port": "3.1.0",
+    "ignore-by-default": "1.0.1",
+    "ignored": "2.0.4",
     "ip": "1.1.5",
     "jsome": "2.3.26",
     "micro": "8.0.2",
