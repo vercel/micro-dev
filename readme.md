@@ -27,6 +27,8 @@ When preparing your development environment, firstly install `micro-dev`:
 npm install --save-dev micro-dev
 ```
 
+**Note:** You'll need at least Node.js v7.6.0 to run `micro-dev`.
+
 Next, add a new `script` property below `micro` inside `package.json`:
 
 ```json
