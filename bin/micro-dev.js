@@ -13,10 +13,19 @@ const serve = require('../lib/serve')
 const { version } = require('../package')
 const logError = require('../lib/error')
 
+const environment = process.env
+
 const flags = mri(process.argv.slice(2), {
   default: {
-    host: '::',
-    port: 3000
+    host: environment.MICRO_DEV_HOST || '::',
+    port: environment.MICRO_DEV_PORT || 3000,
+    cold: environment.MICRO_DEV_COLD,
+    watch: environment.MICRO_DEV_WATCH,
+    poll: environment.MICRO_DEV_POLL,
+    silent: environment.MICRO_DEV_SILENT,
+    help: environment.MICRO_DEV_HELP,
+    version: environment.MICRO_DEV_VERSION,
+    ignore: environment.MICRO_DEV_IGNORE
   },
   alias: {
     p: 'port',
