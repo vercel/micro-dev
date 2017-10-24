@@ -39,25 +39,25 @@
     "API"
   ],
   "dependencies": {
-    "boxen": "1.2.1",
-    "chalk": "2.1.0",
+    "boxen": "1.2.2",
+    "chalk": "2.3.0",
     "chokidar": "1.7.0",
     "clipboardy": "1.1.4",
     "debounce": "1.0.2",
-    "get-port": "3.1.0",
+    "get-port": "3.2.0",
     "ip": "1.1.5",
     "jsome": "2.3.26",
-    "micro": "8.0.2",
+    "micro": "9.0.0",
     "mri": "1.1.0",
     "pkg-up": "2.0.0",
     "pretty-error": "2.1.1",
     "string-length": "2.0.0"
   },
   "devDependencies": {
-    "eslint-config-prettier": "2.3.0",
+    "eslint-config-prettier": "2.6.0",
     "husky": "0.14.3",
-    "lint-staged": "4.0.3",
-    "prettier": "1.5.3",
+    "lint-staged": "4.3.0",
+    "prettier": "1.7.4",
     "xo": "0.18.2"
   }
 }
