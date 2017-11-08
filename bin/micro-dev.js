@@ -16,7 +16,8 @@ const logError = require('../lib/error')
 const flags = mri(process.argv.slice(2), {
   default: {
     host: '::',
-    port: 3000
+    port: 3000,
+    limit: '1mb'
   },
   alias: {
     p: 'port',
@@ -27,7 +28,8 @@ const flags = mri(process.argv.slice(2), {
     s: 'silent',
     h: 'help',
     v: 'version',
-    i: 'ignore'
+    i: 'ignore',
+    l: 'limit'
   },
   unknown(flag) {
     console.log(`The option "${flag}" is unknown. Use one of these:`)
