@@ -57,7 +57,7 @@ if (flags.version) {
 
 // Load the `.env` file
 dotEnv.config({
-  path: path.relative(process.cwd(), flags.dotenv)
+  path: path.resolve(process.cwd(), flags.dotenv)
 })
 
 if (flags.cold && (flags.watch || flags.poll)) {
