@@ -19,7 +19,7 @@ const flags = mri(process.argv.slice(2), {
     host: '::',
     port: 3000,
     limit: '1mb',
-    dotenv: path.join(process.cwd(), '.env')
+    dotenv: '.env'
   },
   alias: {
     p: 'port',
@@ -56,7 +56,9 @@ if (flags.version) {
 }
 
 // Load the `.env` file
-dotEnv.config({ path: flags.dotenv })
+dotEnv.config({
+  path: path.relative(process.cwd(), flags.dotenv)
+})
 
 if (flags.cold && (flags.watch || flags.poll)) {
   logError(
