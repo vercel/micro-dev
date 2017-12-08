@@ -6,6 +6,7 @@ const path = require('path')
 
 // Packages
 const mri = require('mri')
+const dotEnv = require('dotenv')
 
 // Utilities
 const generateHelp = require('../lib/help')
@@ -17,7 +18,8 @@ const flags = mri(process.argv.slice(2), {
   default: {
     host: '::',
     port: 3000,
-    limit: '1mb'
+    limit: '1mb',
+    dotenv: path.join(process.cwd(), '.env')
   },
   alias: {
     p: 'port',
@@ -29,7 +31,8 @@ const flags = mri(process.argv.slice(2), {
     h: 'help',
     v: 'version',
     i: 'ignore',
-    l: 'limit'
+    l: 'limit',
+    d: 'dotenv'
   },
   unknown(flag) {
     console.log(`The option "${flag}" is unknown. Use one of these:`)
@@ -51,6 +54,9 @@ if (flags.version) {
   console.log(version)
   process.exit()
 }
+
+// Load the `.env` file
+dotEnv.config({ path: flags.dotenv })
 
 if (flags.cold && (flags.watch || flags.poll)) {
   logError(
