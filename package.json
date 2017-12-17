@@ -58,7 +58,7 @@
     "eslint-config-prettier": "2.9.0",
     "husky": "0.14.3",
     "lint-staged": "6.0.0",
-    "prettier": "1.9.1",
+    "prettier": "1.9.2",
     "xo": "0.18.2"
   }
 }
