@@ -7,7 +7,7 @@
   ],
   "scripts": {
     "precommit": "lint-staged",
-    "test": "xo"
+    "test": "xo && ava"
   },
   "bin": {
     "micro-dev": "./bin/micro-dev.js"
@@ -55,6 +55,7 @@
     "string-length": "2.0.0"
   },
   "devDependencies": {
+    "ava": "0.25.0",
     "eslint-config-prettier": "2.9.0",
     "husky": "0.14.3",
     "lint-staged": "6.0.0",
