@@ -20,7 +20,8 @@
     ],
     "extends": "prettier",
     "rules": {
-      "unicorn/no-process-exit": 0
+      "unicorn/no-process-exit": 0,
+      "import/no-unresolved": 0
     }
   },
   "lint-staged": {
