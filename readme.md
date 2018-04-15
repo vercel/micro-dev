@@ -44,6 +44,22 @@ As the final step, start the development server like this:
 npm run dev
 ```
 
+## Debugging
+
+`micro-dev` can be used in conjunction with the Node.js Inspector
+
+```json
+"scripts": {
+  "inspect": "node --inspect node_modules/.bin/micro-dev"
+}
+```
+
+As the final step, start the development server like this:
+
+```bash
+npm run inspect
+```
+
 ## Contributing
 
 1. [Fork](https://help.github.com/articles/fork-a-repo/) this repository to your own GitHub account and then [clone](https://help.github.com/articles/cloning-a-repository/) it to your local device
