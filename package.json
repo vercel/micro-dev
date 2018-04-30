@@ -1,13 +1,14 @@
 {
   "name": "micro-dev",
   "version": "2.2.2",
+  "main": "lib/index.js",
   "files": [
     "bin",
     "lib"
   ],
   "scripts": {
-    "precommit": "lint-staged",
-    "test": "xo && ava"
+    "precommit": "npm run test && lint-staged",
+    "test": "xo && cross-env FORCE_COLOR=0 ava"
   },
   "bin": {
     "micro-dev": "./bin/micro-dev.js"
@@ -25,7 +26,6 @@
   },
   "lint-staged": {
     "*.js": [
-      "npm run test",
       "prettier --single-quote --no-semi --write",
       "git add"
     ]
@@ -56,6 +56,7 @@
   },
   "devDependencies": {
     "ava": "0.25.0",
+    "cross-env": "5.1.4",
     "eslint-config-prettier": "2.9.0",
     "husky": "0.14.3",
     "lint-staged": "7.0.0",
