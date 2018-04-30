@@ -46,9 +46,17 @@ npm run dev
 
 ## Programmatic Usage
 
-Unfortunately, due to the nature of hot reload, server states are different across each restart. This is a big problem for using middlewares (e.g. socket.io, Apollo or such) as we cannot just return the created server object. Therefore, you will need a notification callback which is fired before each server start/restart, and inside that callback, you will associate/re-associate middlewares. This should be the easiest workaround right now.
+Unfortunately, due to the nature of hot reload, server states are different across each restart. This is a big problem for using middlewares (e.g. socket.io, Apollo or such) as we cannot just return the created server object.
 
-Using the code from [this issue comment](https://github.com/zeit/micro/issues/337#issuecomment-365670943), just change to the following code:
+Therefore, you will need a notification callback which is fired before each server start/restart, and inside that callback, you will associate/re-associate middlewares.
+
+This should be the easiest workaround right now. Now you could just pass your callback to the last argument.
+
+```js
+micro(file, flags, cbBeforeStart)
+```
+
+If you are using the code from [this issue comment](https://github.com/zeit/micro/issues/337#issuecomment-365670943), just change to the following code:
 ```js
 const micro = require('micro-dev')
 micro(handlerPath, flags, (server) => {
@@ -56,6 +64,9 @@ micro(handlerPath, flags, (server) => {
 })
 ```
 
+*Caveat 1*: **The server is managed by micro-dev after the `micro` call, do not add any user code after it!**
+
+*Caveat 2*: **Code inside the callback isn't likely to be candidated for hot reload watching, unless you modularized your callback (i.e. it's part of the requrie chain).** Please do not naively require the callback file, but instead, wrap it with a lambda.
 
 ## Contributing
 
