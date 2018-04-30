@@ -10,7 +10,7 @@ const dotEnv = require('dotenv')
 
 // Utilities
 const generateHelp = require('../lib/help')
-const serve = require('../lib/serve')
+const serve = require('../lib')
 const { version } = require('../package')
 const logError = require('../lib/error')
 
