@@ -44,6 +44,19 @@ As the final step, start the development server like this:
 npm run dev
 ```
 
+## Programmatic Usage
+
+Unfortunately, due to the nature of hot reload, server states are different across each restart. This is a big problem for using middlewares (e.g. socket.io, Apollo or such) as we cannot just return the created server object. Therefore, you will need a notification callback which is fired before each server start/restart, and inside that callback, you will associate/re-associate middlewares. This should be the easiest workaround right now.
+
+Using the code from [this issue comment](https://github.com/zeit/micro/issues/337#issuecomment-365670943), just change to the following code:
+```js
+const micro = require('micro-dev')
+micro(handlerPath, flags, (server) => {
+  console.log('server is going to start!')
+})
+```
+
+
 ## Contributing
 
 1. [Fork](https://help.github.com/articles/fork-a-repo/) this repository to your own GitHub account and then [clone](https://help.github.com/articles/cloning-a-repository/) it to your local device
