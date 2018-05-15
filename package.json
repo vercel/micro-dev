@@ -63,6 +63,6 @@
     "xo": "0.20.3"
   },
   "peerDependencies": {
-    "micro": "^9.1.4"
+    "micro": ">=9.0.0"
   }
 }
