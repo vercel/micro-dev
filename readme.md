@@ -46,7 +46,7 @@ npm run dev
 
 ## Debugging
 
-`micro-dev` can be used in conjunction with the Node.js Inspector
+The package can be used in conjunction with the Node.js inspector like this:
 
 ```json
 "scripts": {
@@ -57,7 +57,7 @@ npm run dev
 As the final step, start the development server like this:
 
 ```bash
-npm run inspect
+yarn run inspect
 ```
 
 ## Contributing
