@@ -20,7 +20,8 @@
     ],
     "extends": "prettier",
     "rules": {
-      "unicorn/no-process-exit": 0
+      "unicorn/no-process-exit": 0,
+      "import/no-unresolved": 0
     }
   },
   "lint-staged": {
@@ -48,7 +49,6 @@
     "get-port": "3.2.0",
     "ip": "1.1.5",
     "jsome": "2.5.0",
-    "micro": "9.1.4",
     "mri": "1.1.0",
     "pkg-up": "2.0.0",
     "pretty-error": "2.1.1",
@@ -61,5 +61,8 @@
     "lint-staged": "7.0.0",
     "prettier": "1.11.1",
     "xo": "0.20.3"
+  },
+  "peerDependencies": {
+    "micro": ">=9.0.0"
   }
 }
