@@ -6,31 +6,13 @@
     "lib"
   ],
   "scripts": {
-    "precommit": "lint-staged",
-    "test": "xo && ava"
+    "test": "yarn run lint && ava"
   },
   "bin": {
     "micro-dev": "./bin/micro-dev.js"
   },
   "repository": "zeit/micro-dev",
   "license": "MIT",
-  "xo": {
-    "ignores": [
-      "examples/**/*"
-    ],
-    "extends": "prettier",
-    "rules": {
-      "unicorn/no-process-exit": 0,
-      "import/no-unresolved": 0
-    }
-  },
-  "lint-staged": {
-    "*.js": [
-      "npm run test",
-      "prettier --single-quote --no-semi --write",
-      "git add"
-    ]
-  },
   "keywords": [
     "micro",
     "development",
@@ -55,12 +37,10 @@
     "string-length": "2.0.0"
   },
   "devDependencies": {
+    "@zeit/eslint-config-node": "0.2.13",
+    "@zeit/git-hooks": "0.1.4",
     "ava": "0.25.0",
-    "eslint-config-prettier": "2.9.0",
-    "husky": "0.14.3",
-    "lint-staged": "7.1.0",
-    "prettier": "1.12.1",
-    "xo": "0.21.0"
+    "eslint": "4.19.1"
   },
   "peerDependencies": {
     "micro": ">=9.0.0"
