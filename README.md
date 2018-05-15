@@ -69,5 +69,5 @@ Inside the project where you want to test your clone of the package, you can now
 
 ## Authors
 
-- Leo Lamprecht ([@notquiteleo](https://twitter.com/notquiteleo)) - [▲ZEIT](https://zeit.co)
-- Tim Neutkens ([@timneutkens](https://twitter.com/timneutkens))
+- Leo Lamprecht ([@notquiteleo](https://twitter.com/notquiteleo)) - [ZEIT](https://zeit.co)
+- Tim Neutkens ([@timneutkens](https://twitter.com/timneutkens)) - [ZEIT](https://zeit.co)
