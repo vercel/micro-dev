@@ -2,9 +2,8 @@
 
 This command line interface provides a belt full of tools that make building microservices using [micro](https://github.com/zeit/micro) a breeze! It's only meant to be used in development, **not in production** (that's where [micro](https://github.com/zeit/micro) comes in).
 
-[![Build Status](https://travis-ci.org/zeit/micro-dev.svg?branch=master)](https://travis-ci.org/zeit/micro-dev)
+[![CircleCI](https://circleci.com/gh/zeit/micro-dev.svg?style=shield)](https://circleci.com/gh/zeit/micro-dev)
 [![Join the community on Spectrum](https://withspectrum.github.io/badge/badge.svg)](https://spectrum.chat/micro)
-[![XO code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg)](https://github.com/sindresorhus/xo)
 
 ## Features
 
@@ -70,5 +69,5 @@ Inside the project where you want to test your clone of the package, you can now
 
 ## Authors
 
-- Leo Lamprecht ([@notquiteleo](https://twitter.com/notquiteleo)) - [▲ZEIT](https://zeit.co)
-- Tim Neutkens ([@timneutkens](https://twitter.com/timneutkens))
+- Leo Lamprecht ([@notquiteleo](https://twitter.com/notquiteleo)) - [ZEIT](https://zeit.co)
+- Tim Neutkens ([@timneutkens](https://twitter.com/timneutkens)) - [ZEIT](https://zeit.co)
