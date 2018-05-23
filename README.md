@@ -3,7 +3,7 @@
 This command line interface provides a belt full of tools that make building microservices using [micro](https://github.com/zeit/micro) a breeze! It's only meant to be used in development, **not in production** (that's where [micro](https://github.com/zeit/micro) comes in).
 
 [![CircleCI](https://circleci.com/gh/zeit/micro-dev.svg?style=shield)](https://circleci.com/gh/zeit/micro-dev)
-[![Join the community on Spectrum](https://withspectrum.github.io/badge/badge.svg)](https://spectrum.chat/micro)
+[![Join the community on Spectrum](https://withspectrum.github.io/badge/badge.svg)](https://spectrum.chat/micro) [![Greenkeeper badge](https://badges.greenkeeper.io/zeit/micro-dev.svg)](https://greenkeeper.io/)
 
 ## Features
 
