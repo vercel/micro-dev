@@ -56,7 +56,7 @@ The package can be used in conjunction with the Node.js inspector like this:
 As the final step, start the development server like this:
 
 ```bash
-yarn run inspect
+npm run inspect
 ```
 
 ## Contributing
