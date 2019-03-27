@@ -2,6 +2,7 @@
   "name": "micro-dev",
   "version": "3.0.0",
   "main": "./lib/index.js",
+  "typings": "./index.d.ts",
   "files": [
     "bin",
     "lib"
@@ -40,6 +41,7 @@
     "string-length": "2.0.0"
   },
   "devDependencies": {
+    "@types/micro": "7.3.3",
     "@zeit/eslint-config-node": "0.2.13",
     "@zeit/git-hooks": "0.1.4",
     "ava": "0.25.0",
