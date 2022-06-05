@@ -36,7 +36,7 @@
     "jsome": "2.5.0",
     "mri": "1.1.1",
     "pkg-up": "2.0.0",
-    "pretty-error": "2.1.1",
+    "pretty-error": "4.0.0",
     "string-length": "2.0.0"
   },
   "devDependencies": {
