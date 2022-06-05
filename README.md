@@ -1,4 +1,4 @@
-<img src="https://raw.githubusercontent.com/zeit/art/b1c55af9827fc0293bc5a9c1a03e37e08a6f8f16/micro-dev/logo.png" width="80"/>
+# Micro (Dev) — Asynchronous HTTP microservices
 
 This command line interface provides a belt full of tools that make building microservices using [micro](https://github.com/zeit/micro) a breeze! It's only meant to be used in development, **not in production** (that's where [micro](https://github.com/zeit/micro) comes in).
 
@@ -66,5 +66,5 @@ Inside the project where you want to test your clone of the package, you can now
 
 ## Authors
 
--   Leo Lamprecht ([@notquiteleo](https://twitter.com/notquiteleo)) - [Vercel](https://vercel.com)
+-   Leo Lamprecht ([@notquiteleo](https://twitter.com/notquiteleo))
 -   Tim Neutkens ([@timneutkens](https://twitter.com/timneutkens)) - [Vercel](https://vercel.com)
