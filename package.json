@@ -43,7 +43,7 @@
     "@zeit/eslint-config-node": "0.2.13",
     "@zeit/git-hooks": "0.1.4",
     "ava": "4.3.0",
-    "eslint": "4.19.1"
+    "eslint": "8.17.0"
   },
   "peerDependencies": {
     "micro": ">=9.0.0"
