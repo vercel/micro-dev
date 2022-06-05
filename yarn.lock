@@ -52,6 +52,11 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
+"@vercel/git-hooks@1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@vercel/git-hooks/-/git-hooks-1.0.0.tgz#40ed416e532b868eb0ef77dd7566cd5059dc0fc3"
+  integrity sha512-OxDFAAdyiJ/H0b8zR9rFCu3BIb78LekBXOphOYG3snV4ULhKFX387pBPpqZ9HLiRTejBWBxYEahkw79tuIgdAA==
+
 "@zeit/eslint-config-base@0.2.13":
   version "0.2.13"
   resolved "https://registry.yarnpkg.com/@zeit/eslint-config-base/-/eslint-config-base-0.2.13.tgz#47c305edb184efb95cfd4bc83d3ed259ac2bd00d"
@@ -66,11 +71,6 @@
   integrity sha512-E1bokneUXBxm8OVwSEzN52zq9G3NxqwYNJmJs7MuHtJkTLXprY1hpTdBwl6l3ikDfI5zfUEBx03mrG483Mv1vQ==
   dependencies:
     "@zeit/eslint-config-base" "0.2.13"
-
-"@zeit/git-hooks@0.1.4":
-  version "0.1.4"
-  resolved "https://registry.yarnpkg.com/@zeit/git-hooks/-/git-hooks-0.1.4.tgz#70583db5dd69726a62c7963520e67f2c3a33cc5f"
-  integrity sha512-NvgZgoYJ/n27Ly7lKxKttMIKSS8P4dr1EURgTmqihHVdTAEqVtkAYPT5XykZIR+GKz8WRGyEQVJekwSgvjYQLg==
 
 acorn-jsx@^5.3.2:
   version "5.3.2"
