@@ -27,7 +27,7 @@
   "dependencies": {
     "boxen": "1.3.0",
     "chalk": "2.4.1",
-    "chokidar": "2.0.3",
+    "chokidar": "3.5.3",
     "clipboardy": "1.2.3",
     "debounce": "1.1.0",
     "dotenv": "5.0.1",
@@ -36,14 +36,14 @@
     "jsome": "2.5.0",
     "mri": "1.1.1",
     "pkg-up": "2.0.0",
-    "pretty-error": "2.1.1",
+    "pretty-error": "4.0.0",
     "string-length": "2.0.0"
   },
   "devDependencies": {
+    "@vercel/git-hooks": "1.0.0",
     "@zeit/eslint-config-node": "0.2.13",
-    "@zeit/git-hooks": "0.1.4",
-    "ava": "0.25.0",
-    "eslint": "4.19.1"
+    "ava": "4.3.0",
+    "eslint": "8.17.0"
   },
   "peerDependencies": {
     "micro": ">=9.0.0"
