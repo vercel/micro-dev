@@ -7,14 +7,12 @@
     "lib"
   ],
   "scripts": {
-    "test": "yarn run lint && ava",
-    "lint": "zeit-eslint --ext .jsx,.js .",
-    "lint-staged": "git diff --diff-filter=ACMRT --cached --name-only '*.js' '*.jsx' | xargs zeit-eslint"
+    "test": "vitest"
   },
   "bin": {
     "micro-dev": "./bin/micro-dev.js"
   },
-  "repository": "zeit/micro-dev",
+  "repository": "vercel/micro-dev",
   "license": "MIT",
   "keywords": [
     "micro",
@@ -40,20 +38,9 @@
     "string-length": "2.0.0"
   },
   "devDependencies": {
-    "@vercel/git-hooks": "1.0.0",
-    "@zeit/eslint-config-node": "0.2.13",
-    "ava": "4.3.0",
-    "eslint": "8.17.0"
+    "vitest": "0.17.0"
   },
   "peerDependencies": {
     "micro": ">=9.0.0"
-  },
-  "eslintConfig": {
-    "extends": [
-      "@zeit/eslint-config-node"
-    ]
-  },
-  "git": {
-    "pre-commit": "lint-staged"
   }
 }

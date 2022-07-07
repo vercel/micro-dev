@@ -1,0 +1,21 @@
+// Vitest Snapshot v1
+
+exports[`--help 1`] = `
+"
+  Usage: micro-dev [path] [options]
+
+  Options:
+
+    -p, --port <n>      Port to listen on (defaults to 3000)
+    -H, --host          The host on which micro will run
+    -d, --dotenv        Custom path for a .env file (relative to cwd)
+    -c, --cold          Disable hot reloading
+    -w, --watch <dir>   A directory to watch in addition to [path]
+    -L, --poll          Poll for code changes rather than using events
+    -l, --limit         Size limit for JSON parsing (string like '1mb', or bytes)
+    -i  --ignore <dir>  Ignore watching a file, directory, or glob
+    -s, --silent        Disable requests log
+    -v, --version       Output the version number
+    -h, --help          Show this usage information
+  "
+`;
