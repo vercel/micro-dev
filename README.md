@@ -1,6 +1,6 @@
 # Micro (Dev) — Asynchronous HTTP microservices
 
-This command line interface provides a belt full of tools that make building microservices using [micro](https://github.com/zeit/micro) a breeze! It's only meant to be used in development, **not in production** (that's where [micro](https://github.com/zeit/micro) comes in).
+This command line interface provides a belt full of tools that make building microservices using [micro](https://github.com/vercel/micro) a breeze! It's only meant to be used in development, **not in production** (that's where [micro](https://github.com/vercel/micro) comes in).
 
 ## Features
 
@@ -15,7 +15,7 @@ This command line interface provides a belt full of tools that make building mic
 
 ## Usage
 
-**Important:** This tool is only meant to be used in development. In production, you should use [micro](https://github.com/zeit/micro), which is much lighter and faster (and also comes without the belt of tools used when developing microservices).
+**Important:** This tool is only meant to be used in development. In production, you should use [micro](https://github.com/vercel/micro), which is much lighter and faster (and also comes without the belt of tools used when developing microservices).
 
 When preparing your development environment, firstly install `micro-dev`:
 
