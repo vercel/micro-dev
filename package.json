@@ -7,7 +7,7 @@
     "lib"
   ],
   "scripts": {
-    "test": "ava"
+    "test": "vitest"
   },
   "bin": {
     "micro-dev": "./bin/micro-dev.js"
@@ -38,7 +38,7 @@
     "string-length": "2.0.0"
   },
   "devDependencies": {
-    "ava": "4.3.0"    
+    "vitest": "0.17.0"
   },
   "peerDependencies": {
     "micro": ">=9.0.0"
