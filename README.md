@@ -40,7 +40,7 @@ As the final step, start the development server like this:
 npm run dev
 ```
 
-A full list of micro-dev's CLI arguments can be found by running `npx micro-dev --help` and looks as so:
+A full list of micro-dev's CLI arguments can be found by running `micro-dev --help` and looks as so:
 ```bash
 Usage: micro-dev [path] [options]
 
@@ -59,9 +59,9 @@ Usage: micro-dev [path] [options]
     -h, --help          Show this usage information
 ```
 
-For example, if you wanted to change the host and port to http://notLocalhost:4040/, you would run:
+For example, if you wanted to change the host and port from the default, you would run:
 ```bash
-npx micro-dev -p 4040 -H http://notLocalhost/
+micro-dev -p 4040 -H http://notLocalhost/
 ```
 
 For that change to persist, modify the applicable package.json script:
