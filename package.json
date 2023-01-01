@@ -7,7 +7,8 @@
     "lib"
   ],
   "scripts": {
-    "test": "vitest"
+    "test": "vitest",
+    "prettier-check": "prettier --check ."
   },
   "bin": {
     "micro-dev": "./bin/micro-dev.js"
@@ -38,9 +39,13 @@
     "string-length": "2.0.0"
   },
   "devDependencies": {
-    "vitest": "0.17.0"
+    "vitest": "0.17.0",
+    "@vercel/style-guide": "3.0.0",
+    "eslint": "8.19.0",
+    "prettier": "2.7.1"
   },
   "peerDependencies": {
     "micro": ">=10.0.0"
-  }
+  },
+  "prettier": "@vercel/style-guide/prettier"
 }
