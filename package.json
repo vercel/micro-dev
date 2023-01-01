@@ -41,6 +41,6 @@
     "vitest": "0.17.0"
   },
   "peerDependencies": {
-    "micro": ">=9.0.0"
+    "micro": ">=10.0.0"
   }
 }
