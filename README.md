@@ -4,14 +4,14 @@ This command line interface provides a belt full of tools that make building mic
 
 ## Features
 
--   **Hot Reloading:** When making changes to your code, the server will restart by itself
--   **Logs:** Incoming and outgoing requests will be logged to `stdout`
--   **Beautiful JSON:** When JSON bodies are logged, they're styled and prettified
--   **Clipboard Support:** The local address is pasted to the clipboard automatically
--   **Port Selection:** Automatic detection and use of an open port (if the specified one is in use)
--   **Debug in Your Network:** The network address shown in addition to local one
--   **Duration Logs:** Calculates and shows the duration for each request
--   **Pretty Errors:** Prettifies the `Error` object if any exceptions are thrown
+- **Hot Reloading:** When making changes to your code, the server will restart by itself
+- **Logs:** Incoming and outgoing requests will be logged to `stdout`
+- **Beautiful JSON:** When JSON bodies are logged, they're styled and prettified
+- **Clipboard Support:** The local address is pasted to the clipboard automatically
+- **Port Selection:** Automatic detection and use of an open port (if the specified one is in use)
+- **Debug in Your Network:** The network address shown in addition to local one
+- **Duration Logs:** Calculates and shows the duration for each request
+- **Pretty Errors:** Prettifies the `Error` object if any exceptions are thrown
 
 ## Usage
 
@@ -66,5 +66,5 @@ Inside the project where you want to test your clone of the package, you can now
 
 ## Authors
 
--   Leo Lamprecht ([@notquiteleo](https://twitter.com/notquiteleo))
--   Tim Neutkens ([@timneutkens](https://twitter.com/timneutkens)) - [Vercel](https://vercel.com)
+- Leo Lamprecht ([@notquiteleo](https://twitter.com/notquiteleo))
+- Tim Neutkens ([@timneutkens](https://twitter.com/timneutkens)) - [Vercel](https://vercel.com)
