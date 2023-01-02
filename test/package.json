@@ -5,6 +5,7 @@
     "test": "vitest"
   },
   "devDependencies": {
-    "vitest": "0.17.0"
+    "vitest": "0.17.0",
+    "micro-dev": "*"
   }
 }
