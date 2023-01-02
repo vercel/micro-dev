@@ -1,13 +1,13 @@
 {
   "name": "micro-dev",
   "version": "3.1.0",
-  "main": "./lib/index.js",
+  "main": "./src/lib/index.js",
   "files": [
     "bin",
     "lib"
   ],
   "bin": {
-    "micro-dev": "./bin/micro-dev.js"
+    "micro-dev": "./src/bin/micro-dev.js"
   },
   "repository": "vercel/micro-dev",
   "license": "MIT",
