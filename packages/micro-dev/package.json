@@ -6,9 +6,6 @@
     "bin",
     "lib"
   ],
-  "scripts": {
-    "test": "vitest"
-  },
   "bin": {
     "micro-dev": "./bin/micro-dev.js"
   },
@@ -36,9 +33,6 @@
     "pkg-up": "2.0.0",
     "pretty-error": "4.0.0",
     "string-length": "2.0.0"
-  },
-  "devDependencies": {
-    "vitest": "0.17.0"
   },
   "peerDependencies": {
     "micro": ">=9.0.0"
