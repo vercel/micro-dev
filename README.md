@@ -40,6 +40,38 @@ As the final step, start the development server like this:
 npm run dev
 ```
 
+A full list of micro-dev's CLI arguments can be found by running `micro-dev --help` and looks as so:
+```bash
+Usage: micro-dev [path] [options]
+
+  Options:
+
+    -p, --port <n>      Port to listen on (defaults to 3000)
+    -H, --host          The host on which micro will run
+    -d, --dotenv        Custom path for a .env file (relative to cwd)
+    -c, --cold          Disable hot reloading
+    -w, --watch <dir>   A directory to watch in addition to [path]
+    -L, --poll          Poll for code changes rather than using events
+    -l, --limit         Size limit for JSON parsing (string like '1mb', or bytes)
+    -i  --ignore <dir>  Ignore watching a file, directory, or glob
+    -s, --silent        Disable requests log
+    -v, --version       Output the version number
+    -h, --help          Show this usage information
+```
+
+For example, if you wanted to change the host and port from the default, you would run:
+```bash
+micro-dev -p 4040 -H http://notLocalhost/
+```
+
+For that change to persist, modify the applicable package.json script:
+```json
+"scripts": {
+  "start": "micro",
+  "dev": "micro-dev -p 4040 -H http:/notLocalhost/"
+}
+```
+
 ## Debugging
 
 The package can be used in conjunction with the Node.js inspector like this:
