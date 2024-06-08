@@ -66,5 +66,5 @@ Inside the project where you want to test your clone of the package, you can now
 
 ## Authors
 
--   Leo Lamprecht ([@notquiteleo](https://twitter.com/notquiteleo))
--   Tim Neutkens ([@timneutkens](https://twitter.com/timneutkens)) - [Vercel](https://vercel.com)
+-   Leo Lamprecht ([@leo](https://x.com/leo))
+-   Tim Neutkens ([@timneutkens](https://x.com/timneutkens)) - [Vercel](https://vercel.com)
